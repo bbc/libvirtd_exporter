@@ -1,6 +1,7 @@
 #!/bin/bash
 # Small script to build libvirtd-exporter using docker and export the resulting binary
 
+set -e
 docker build -t libvirtd-exporter .
 
 # Start container with result
